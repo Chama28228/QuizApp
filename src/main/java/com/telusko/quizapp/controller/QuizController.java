@@ -1,16 +1,18 @@
 package com.telusko.quizapp.controller;
 
-import com.telusko.quizapp.model.Question;
+
 import com.telusko.quizapp.model.QuestionWrapper;
 import com.telusko.quizapp.model.Respone;
 import com.telusko.quizapp.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+//Quiz controller class to accept clients quiz queries
 
+//A rest controller
 @RestController
 @RequestMapping("quiz")
 public class QuizController {

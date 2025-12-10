@@ -25,7 +25,6 @@ public class QuestionService {
         }
 
     }
-
     public ResponseEntity<List<Question>> getQuestionsByCategory(String category) {
         try{
             return new ResponseEntity<>(questionDao.findByCategory(category), HttpStatus.OK);
